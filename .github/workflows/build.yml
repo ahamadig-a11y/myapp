@@ -7,7 +7,7 @@ jobs:
       image: kivy/buildozer:master
     steps:
       - uses: actions/checkout@v4
-      - name: Build
+      - name: Build APK
         run: buildozer android debug
       - name: Upload APK
         uses: actions/upload-artifact@v4
